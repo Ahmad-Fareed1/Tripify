@@ -1,73 +1,47 @@
-# Welcome to your Lovable project
+# 🌍 Tripify
 
-## Project info
+**Tripify** is a modern, full-stack travel search and booking platform. It provides users with a seamless experience to search for flights, find hotel deals, and explore curated travel packages.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## ✨ Key Features
 
-## How can I edit this code?
+- 🛫 **Flight Search**: Real-time flight search with detailed filtering (airline, stops, class).
+- 🏨 **Hotel Deals**: Find the best prices for hotels in your destination.
+- 📦 **Travel Packages**: Combined flight and hotel deals for maximum savings.
+- 🔐 **User Dashboard**: Manage bookings and view flight/hotel tickets.
+- 🎨 **Responsive UI**: Built with a premium aesthetic using Tailwind CSS and shadcn/ui.
 
-There are several ways of editing your application.
+## 🛠️ Tech Stack
 
-**Use Lovable**
+- **Frontend**: React, TypeScript, Vite
+- **Styling**: Tailwind CSS, Lucide React (Icons)
+- **UI Components**: shadcn/ui
+- **Backend/Database**: [Supabase](https://supabase.com/)
+- **API Management**: Supabase Edge Functions & Vercel Serverless Functions
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 🔌 API Integrations
 
-Changes made via Lovable will be committed automatically to this repo.
+Tripify leverages powerful external APIs to fetch real-time travel data:
 
-**Use your preferred IDE**
+- **SerpApi**: Used for fetching real-time Google Flights and Google Hotels data.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🚀 Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Prerequisites
 
-Follow these steps:
+- Node.js (v18+)
+- npm or bun
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 📁 Project Structure
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```text
+├── api/             # Vercel Serverless Functions
+├── src/
+│   ├── components/  # Reusable UI components
+│   ├── hooks/       # Custom React hooks
+│   ├── pages/       # Route-level components (Deals, Flights, Hotels)
+│   └── services/    # API and Supabase service layers
+├── supabase/        # Edge Functions and DB schema
+└── public/          # Static assets
 ```
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
