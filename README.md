@@ -24,24 +24,3 @@ Tripify leverages powerful external APIs to fetch real-time travel data:
 
 - **SerpApi**: Used for fetching real-time Google Flights and Google Hotels data.
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-- Node.js (v18+)
-- npm or bun
-
-
-## 📁 Project Structure
-
-```text
-├── api/             # Vercel Serverless Functions
-├── src/
-│   ├── components/  # Reusable UI components
-│   ├── hooks/       # Custom React hooks
-│   ├── pages/       # Route-level components (Deals, Flights, Hotels)
-│   └── services/    # API and Supabase service layers
-├── supabase/        # Edge Functions and DB schema
-└── public/          # Static assets
-```
-
